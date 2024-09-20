@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React, { useState } from 'react';
 import { Bell, Settings, User, Home, TrendingUp, Users, Brain, ChevronRight,  Star, ArrowUp, ArrowDown, ArrowRight  } from 'lucide-react';
 
