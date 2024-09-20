@@ -2,20 +2,20 @@ import WarmCareUI from './components/WarmCareUI'
 import ChildAppUI from './components/ChildAppUI'
 import App from './App.tsx'
 import {
-  createBrowserRouter,
+  createHashRouter,
 } from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: "/bond-dev/",
+    path: "/*",
     element: <App />,
   },
     {
-    path: "/bond-dev/parent/",
+    path: "/child",
     element: <ChildAppUI />,
   },
     {
-    path: "/bond-dev/child/",
+    path: "/parent",
     element: <WarmCareUI />,
   },
 ]);
